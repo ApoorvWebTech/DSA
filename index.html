@@ -22,7 +22,8 @@
             margin: auto;
         }
 
-        table,th,
+        table,
+        th,
 
         td {
             border: 1px solid black;
@@ -32,9 +33,12 @@
             font-family: cursive;
             border-radius: 5px;
             overflow: hidden;
-            list-style:inside;
+            list-style: inside;
         }
-        h2 {color:darkred}
+
+        h2 {
+            color: darkred
+        }
     </style>
 </head>
 
@@ -74,15 +78,18 @@
                     </td>
                     <td>
                         <img src="./DS.jpg">
-                        <p><b>Linear:</b> A data which may be chnage or update only from the start or the end point not in the middle.</p>
-                        <p><b>Non-Linear</b>A data which may be chamnge between the process or we can add, update or delete any middle branch of the tree.</p>
+                        <p><b>Linear:</b> A data which may be chnage or update only from the start or the end point not
+                            in the middle.</p>
+                        <p><b>Non-Linear</b>A data which may be chamnge between the process or we can add, update or
+                            delete any middle branch of the tree.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <h3>DS's Operations</h3>
                     </td>
-                    <td><p>Here are some operations which can be perform in all the DS</p>
+                    <td>
+                        <p>Here are some operations which can be perform in all the DS</p>
                         <ul>
                             <li>Traversal: Travel or read the array from start to end.</li>
                             <li>Insertion</li>
@@ -118,18 +125,19 @@
                     <td>
                         <h3>Array Traversing & Accessing</h3>
                     </td>
-                    <td>Array Traversing means to check out each & every element and accessing means to check any specific element in the array.
+                    <td>Array Traversing means to check out each & every element and accessing means to check any
+                        specific element in the array.
                         <p>let data = [2,3,34,56,34,22,8,0,5,8];</p><br>
                         <p>for(let i = 0; i < data.length; i++) {</p>
-                            <p>document.write('Array ${i} is ${data[i]}, '); }</p><br>
-                            <p>let x = 3;</p>
-                            <p>document.write('data[x]');</p><br>
-                            <p>function getElement() {</p>
-                            <p>let elm = document.getElementById('id name').value</p>
-                            <p>if(elm < data.length && typeof parseInt(el) === "number" && elm > 0) {</p>
-                            <p>alert(data[i]); } else {</p>
-                            <p>alert("Please Enter Valid Data"); }</p>
-                        
+                                <p>document.write('Array ${i} is ${data[i]}, '); }</p><br>
+                                <p>let x = 3;</p>
+                                <p>document.write('data[x]');</p><br>
+                                <p>function getElement() {</p>
+                                <p>let elm = document.getElementById('id name').value</p>
+                                <p>if(elm < data.length && typeof parseInt(el)==="number" && elm> 0) {</p>
+                                <p>alert(data[i]); } else {</p>
+                                <p>alert("Please Enter Valid Data"); }</p>
+
                     </td>
                 </tr>
                 <tr>
@@ -164,10 +172,10 @@
                         <p>let pos = 2;</p>
                         <p>console.log(data);</p>
                         <p>for(let i = pos; i<data.length; i++){</p>
-                        <p>console.log(data[i]);</p>
-                        <p>data[i] = data[i+1]; }</p>
-                        <p>data.length = data.length-1;</p>
-                        <p>console.log(data);</p>
+                                <p>console.log(data[i]);</p>
+                                <p>data[i] = data[i+1]; }</p>
+                                <p>data.length = data.length-1;</p>
+                                <p>console.log(data);</p>
                     </td>
                 </tr>
 
@@ -175,21 +183,37 @@
                     <td>
                         <h3>Search in Array</h3>
                     </td>
-                    <td>Data Structure & Algorithm</td>
-                </tr>
-
-                <tr>
                     <td>
-                        <h3>Sorting in Array</h3>
+                        <p>let data = [10, 5, 9, 20, 3, 0];</p>
+                        <p>let search = 5;</p>
+                        <p>let index;</p>
+                        <p>console.log(data);</p>
+                        <p>for(let i = 0; i < data.length; i++){</p>
+                                <p>console.log(data[i]);</p>
+                                <p>if(data[i] == search) {</p>
+                                <p>index = i; break;</p>
+                                <p>} }</p>
+                                <p>console.log(index);</p>
+                                <p>data.splice(2,2);</p>
+                                <p>console.log(data);</p>
                     </td>
-                    <td>Data Structure & Algorithm</td>
                 </tr>
 
                 <tr>
                     <td>
                         <h3>Merge in Array</h3>
                     </td>
-                    <td>Data Structure & Algorithm</td>
+                    <td>
+                        <p>let data = [10, 5, 9, 20, 3, 0];</p>
+                        <p>let data2 = [50, 2, 3, 6, 58, 95, 26];</p>
+                        <p>let data3 = [];</p>
+                        <p>console.log(data, data2);</p>
+                        <p>for(let i = 0; i < data.length; i++){</p>
+                                <p>data3[i] = data[i]; }</p>
+                                <p>for(i = 0; i < data2.length; i++) {</p>
+                                        <p>data3[data.length + i] = data2[i]; }</p>
+                                        <p>console.log(data3);</p>
+                    </td>
                 </tr>
                 <tr>
                     <td>
