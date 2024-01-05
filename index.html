@@ -53,8 +53,12 @@
                         <h2>Question</h2>
                     </th>
                     <th>
-                        <p>Answer</p>
+                        <p>Answer</p>  
                     </th>
+                </tr>
+                <tr>
+                    <td><h3>Source of Learning</h3></td>
+                    <td><p><a href="https://www.youtube.com/playlist?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7" target="_blank">https://www.youtube.com/playlist?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7</a></p></td>
                 </tr>
                 <tr>
                     <td>
@@ -235,22 +239,70 @@
                     </td>
                     <td>
                         <p>f(n) = (5n)2 + 6n + 12</p><br>
-                        <p><b>What is AA: </b></p>
+                        <p><b>What is AA: </b>AA helps to find which algo is better to use or fit for our problem to solve.</p>
                         <p><b>How to calculate Time Complexity: </b></p>
-                        <p><b>Asymptotic Notations: </b></p>
+                        <p><b>Asymptotic Notations: </b>Big o notation, theta notation, omega Notation</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>What is DSA?</h3>
+                        <h3>Array Sorting</h3>
                     </td>
-                    <td>Data Structure & Algorithm</td>
+                    <td>
+                        <ul>
+                            <li>Basic Understanding</li>
+                            <li>Understand Solution</li>
+                            <li>Write code and understand steps</li>
+                            <li>What is algi Complexility</li>
+                            <li>Interview Questions</li>
+                        </ul>
+                        <br>
+                        <p><b>Bubble sort</b></p>
+                        <br>
+                            <p>let array = [20, 5, 9, 645, 656, 36, 12, 7];</p>
+                            <p>let num;</p>
+                            <p>document.write(array + "line break");</p>
+                            <p>for(let i = 0; i < array.length; i++){</p>
+                            <p>for(let j = 0; j < array.length; j++){</p>
+                            <p>if(array[j] > array[j+1]) {</p>
+                            <p>num = array[j];</p>
+                            <p>array[j] = array[j+1];</p>
+                            <p>array[j+1] = num; } } } </p>
+                            <p>document.write(array);</p>
+                    </td>
                 </tr>
                 <tr>
                     <td>
-                        <h3>What is DSA?</h3>
+                        <h3>Recursion DS</h3>
                     </td>
-                    <td>Data Structure & Algorithm</td>
+                    <td>
+                        <ul>
+                            <li><b>What is RDS?: </b>If a function call himself again & again called Recursion.</li>
+                            <li>Example:</li>
+                            <p>as</p>
+                            <script>
+                                let data = 0;
+                                function apple(x){
+                                    document.write(x);
+                                    if(x<10){
+                                        apple(x+1);
+                                    }
+                                }
+                                apple(data);
+                            </script>
+                            <script>
+                                let n = 5;
+                                function fact(x){
+                                    if(x == 0){
+                                        return 1;
+                                    }
+                                    return x*fact(x-1);
+                                }
+
+                                // fact(n);
+                            </script>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>
